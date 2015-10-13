@@ -26,3 +26,13 @@ echo $_aurl;
 
 $_aurl = $url_manager->createUrl('user/login', array('ref' => 'http://www.chaoma.me'));
 echo $_aurl;
+
+$req_route = $url_manager->parseUrl();
+var_dump($req_route);
+$url_manager->parsePathInfo($req_route);
+//var_dump($_GET);
+var_dump($_REQUEST);
+
+
+
+//根据用户请求调度控制器请参看 yii CWebApplication::runController方法
