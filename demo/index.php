@@ -18,7 +18,6 @@ $rules = array(
 
 $url_manager->addRules($rules);
 
-echo '<pre>';
 $_aurl = $url_manager->createUrl('article/read', array('id' => 11));
 echo $_aurl;
 
@@ -27,4 +26,3 @@ echo $_aurl;
 
 $_aurl = $url_manager->createUrl('user/login', array('ref' => 'http://www.chaoma.me'));
 echo $_aurl;
-echo '</pre>';
